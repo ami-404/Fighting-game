@@ -1,0 +1,105 @@
+@font-face {
+  font-family: pressstart;
+  src: url(/font/PressStart2P-Regular.ttf);
+}
+* {
+  box-sizing: border-box;
+  user-select: none;
+  font-family: 'pressstart';
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  image-rendering: pixelated;
+}
+
+#btns{
+  position: absolute;
+  display: flex;
+  gap: 5px;
+}
+
+#healthbar {
+  display: flex;
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  
+}
+
+#playerhealth {
+  position: absolute;
+  background-color: #A46DFF;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  
+}
+
+#timer {
+  background-color: black;
+  width: 100px;
+  height: 50px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border: 4px solid #fff;
+}
+
+#enemyhealth {
+  position: absolute;
+  background-color: #A46DFF;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+}
+
+button {
+  user-select: none
+}
+
+.playerbtn {
+  position: absolute;
+  width: 200px;
+  left: 50px;
+  bottom: 50px;
+}
+
+.emimebtn {
+  position: absolute;
+  width: 200px;
+  right: 160px;
+  bottom: 50px;
+}
+
+controler button {
+  width: 50px;
+  height: 30px;
+  background-color: #3CB3AC7D;
+}
+
+controler #up,
+#attack {
+  transform: translatex(50%);
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+controler #arrow-up,
+#arrow-attack {
+  transform: translatex(50%);
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+

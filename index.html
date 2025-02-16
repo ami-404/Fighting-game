@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+</head>
+
+<body>
+  <div style="position: relative; display: inline-block;">
+    <div id="btns">
+    <button id="fullscreen-button" >fullscreen</button>
+      
+    <button onclick="window.location.reload()">Refresh</button>
+    </div>
+    <div id="healthbar">
+      <!-- player health -->
+      <div id="playerhealtbar" style="
+      position: relative; 
+      
+      width: 100%; 
+      display: flex;
+      justify-content: flex-end;
+      border: 4px solid #fff;
+  border-right: 0px;">
+        <div id="playerhealth"></div>
+        <div style="
+        background-color: red;
+        height: 30px;
+        width: 100%;
+        "></div>
+      </div>
+      <!-- timer -->
+      <div id="timer">10</div>
+      <!-- enemy health -->
+      <div id="enemyhealtbar" style="
+      position: relative; 
+      
+      width: 100%;
+      border: 4px solid #fff;
+border-left: 0px;">
+        <div id="enemyhealth"></div>
+        <div style="
+        background-color: red;
+        height: 30px;"></div>
+      </div>
+    </div>
+    <controler>
+      <div id="displaywinner" style="
+      position: absolute;
+      color: white;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      ">winner</div>
+      <div class="emimebtn">
+        <button id="arrow-up">⬆️</button><br /> <button id="arrow-left">⬅️</button>
+        <button id="arrow-right">➡️</button> <br />
+        <button id="arrow-attack">💨</button>
+      </div>
+
+      <div class="playerbtn">
+        <button id="up">⬆️</button><br /> <button id="left">⬅️</button>
+        <button id="right">➡️</button> <br />
+        <button id="attack">💨</button>
+      </div>
+
+    </controler>
+    <canvas></canvas>
+  </div>
+  <script>
+    // Request full-screen mode
+    document.documentElement.requestFullscreen();
+
+    // Exit full-screen mode
+    document.exitFullscreen();
+
+    // Get the button element
+    const fullscreenButton = document.getElementById('fullscreen-button');
+
+    // Add an event listener to the button
+    fullscreenButton.addEventListener('click', () => {
+      // Request full-screen mode
+      document.documentElement.requestFullscreen();
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/classes.js"></script>
+  <script src="index.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>
