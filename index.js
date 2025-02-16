@@ -15,7 +15,7 @@ const background = new sprite({
     x: 0,
     y: 0
   },
-  imageSrc: '/img/background.png'
+  imageSrc: './img/background.png'
 })
 
 const shop = new sprite({
@@ -23,7 +23,7 @@ const shop = new sprite({
     x: 460,
     y: 76
   },
-  imageSrc: '/img/shop.png',
+  imageSrc: './img/shop.png',
   scale: 1.75,
   framesMax: 6
 })
@@ -41,7 +41,7 @@ const player = new fighter({
     x: 0,
     y: 0
   },
-  imageSrc: '/img/smurai_mack/Idle.png',
+  imageSrc: './img/smurai_mack/Idle.png',
   scale: 2.16,
   framesMax: 8,
   offset: {
@@ -50,31 +50,31 @@ const player = new fighter({
   },
   sprites: {
     idle: {
-      imageSrc: '/img/smurai_mack/Idle.png',
+      imageSrc: './img/smurai_mack/Idle.png',
       framesMax: 8
     },
     run: {
-      imageSrc: '/img/smurai_mack/Run.png',
+      imageSrc: './img/smurai_mack/Run.png',
       framesMax: 8
     },
     jump: {
-      imageSrc: '/img/smurai_mack/Jump.png',
+      imageSrc: './img/smurai_mack/Jump.png',
       framesMax: 2
     },
     fall: {
-      imageSrc: '/img/smurai_mack/Fall.png',
+      imageSrc: './img/smurai_mack/Fall.png',
       framesMax: 2
     },
     attack1: {
-      imageSrc: '/img/smurai_mack/Attack1.png',
+      imageSrc: './img/smurai_mack/Attack1.png',
       framesMax: 6
     },
     takeHit: {
-      imageSrc: '/img/smurai_mack/Take Hit - white silhouette.png',
+      imageSrc: './img/smurai_mack/Take Hit - white silhouette.png',
       framesMax: 4
     },
     death: {
-      imageSrc: '/img/smurai_mack/Death.png',
+      imageSrc: './img/smurai_mack/Death.png',
       framesMax: 6
     }
   },
